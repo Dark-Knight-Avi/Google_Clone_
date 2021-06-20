@@ -1,0 +1,290 @@
+/* Css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* Navbar section */
+
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5px 20px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    /* color: #000000DE; */
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.burger {
+    border: 2px solid white;
+    padding: 10px 12px;
+    padding-bottom: 7px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.burger:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+}
+
+.line {
+    background-color: #5f6368;
+    margin: 2px 0px;
+    border: 2.2px solid #5f6368;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.col {
+    display: inline-block;
+    margin: -0.8px;
+}
+
+.btn {
+    all: unset;
+    background-color: #1a73e8;
+    padding: 10px 25px;
+    margin: 0px 8px;
+    text-align: center;
+    color: #ffff;
+    border: transparent;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px
+}
+
+.btn:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 2px 2px rgba(66, 133, 244, 0.3);
+    box-shadow: 0 0 1px 2px rgba(66, 133, 244, 0.3);
+}
+
+
+/* Logo section starts here */
+
+.logo {
+    height: 15.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 20px;
+    height: 100%;
+}
+
+
+/* search bar section starts  */
+
+.search {
+    height: 6.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 68px;
+}
+
+.search-bar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 584px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+}
+
+.search-bar:hover {
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.search .search-bar .search-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .search-bar .search-icon img {
+    height: 43%;
+    margin: 0px 20px;
+}
+
+.search .search-bar .search-input {
+    height: 100%;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .search-bar .search-input input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.search .search-bar .search-voice {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .search-bar .search-voice img {
+    height: 45%;
+    margin-right: 20px;
+}
+
+
+/* Search Buttons starts here */
+
+.search-buttons {
+    margin-top: 30px;
+}
+
+.btn-search {
+    background-color: #f5f5f5;
+    color: #5f6368;
+    padding: 10px 20px;
+    margin: 0px 3px;
+    font-size: 15px;
+}
+
+.btn-search:hover {
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color: #808080;
+    box-shadow: none;
+}
+
+.btn-search:focus {
+    border: 1px solid #4885ed;
+    padding: 9px 19px;
+}
+
+
+/* Google-offer section starts here */
+
+.google-offer {
+    display: flex;
+    margin-top: 67px;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-offer p {
+    font-size: 13px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-right: 4px;
+}
+
+.google-offer .options a {
+    padding: 0px 3px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.google-offer .options a:hover {
+    text-decoration: underline;
+}
+
+.google-offer .options a:active {
+    color: -webkit-link;
+}
+
+
+/* footer starts here */
+
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    /* margin-top: 24px; */
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.footer .country {
+    border-bottom: 1px solid #dadce0;
+    height: 46.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.footer .country p {
+    color: #0000008a;
+    font-size: 15px;
+}
+
+.footer .footer-options {
+    height: 46.5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.footer .footer-options a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+
+.footer .footer-options a:hover {
+    text-decoration: underline;
+}
+
+.footer-options .left {
+    flex-grow: 2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
